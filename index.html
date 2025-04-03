@@ -32,6 +32,7 @@
             margin-right: 10px;
             font-size: 16px;
             transition: 500ms ease-in-out;
+            
         }
         header nav a:hover {
             transform: translateY(-5px);
@@ -41,12 +42,14 @@
             max-width: 1200px;
             margin: auto;
             padding: 20px;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
         }
         .content {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
             margin-top: 20px;
+           
         }
         .box{
             background: #f4f4f4;
@@ -54,6 +57,8 @@
             text-align: center;
             padding: 20px;
             margin: 20px;
+            border-radius: 4%;
+            box-shadow: 3px 3px 5px rgba(0,0,0,0.2);
         }
         footer {
             background: #333;
@@ -67,6 +72,24 @@
         }
         footer p {
             margin: 0;
+        }
+        @media (max-width: 768px) {
+            nav {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            header{
+                flex-direction: column;
+                text-align: center;
+                font-size: 18px;
+            }
+            header nav a{
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                margin: 5px 0;
+            }
         }
 
     </style>
