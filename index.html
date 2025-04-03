@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+        header {
+            background: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        header p {
+            margin-left: 20px;
+            font-size: 24px;
+        }
+        header nav {
+            display: flex;
+        }
+
+        header nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            font-size: 16px;
+            transition: 500ms ease-in-out;
+        }
+        header nav a:hover {
+            transform: translateY(-5px);
+            background: #555;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+        .box{
+            background: #f4f4f4;
+            flex: 1 1 300px;
+            text-align: center;
+            padding: 20px;
+            margin: 20px;
+        }
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            width: 100%;
+            border-radius: 2px;
+            bottom: 0;
+        }
+        footer p {
+            margin: 0;
+        }
+
+    </style>
+
+    <title>Espaca timpano</title>
+</head>
+<body>
+
+    <header>
+        <p>Site maneiro</p>
+        <nav>
+          <a href ="#">Inicio</a>
+          <a href ="#">Musicas</a>
+          <a href ="#">Podcasts</a>
+          <a href ="#">Contato</a>
+        </nav>
+    </header>
+ 
+    <div class="container">
+        <div class="content">
+            <div class="box">Conteúdo 1</div>
+            <div class="box">Conteúdo 2</div>
+            <div class="box">Conteúdo 3</div>
+    </div>
+    <footer>
+        <p>&copy; Espanca timpano | Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
